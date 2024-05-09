@@ -1,0 +1,8 @@
+.kasa-header {
+    display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	align-items: center;
+	height: 68px;
+    padding: 45px 100px 50px 100px;
+}

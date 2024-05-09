@@ -1,8 +1,12 @@
 
-
+import Banner from '../../components/Banner'
 
 function Home() {
-    return <div>Page d'accueil 🏡</div>
+    return (
+        <div>
+      <Banner background={'shore'}>Page d'accueil 🏡</Banner>
+      </div>
+    )
 }
 
 export default Home;
