@@ -1,0 +1,14 @@
+.kasa-card-container {
+    
+    height: auto;
+    min-height: 500px;
+    margin: 0px 100px 50px 100px;
+    padding: 50px;
+    border-radius: 25px;
+    background-color: #F6F6F6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px 60px;
+}

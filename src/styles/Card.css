@@ -1,0 +1,26 @@
+.kasa-card {
+    position: relative;
+    display: flex;
+    width:340px;
+    height: 340px;
+    border-radius: 10px;
+    /*background-color: #FF6060;*/
+}
+
+.kasa-card img {
+    width:340px;
+    height: 340px;
+    
+    border-radius: 10px;
+	object-fit: cover;
+}
+
+
+.kasa-card h3 {
+    position: absolute;
+    font-size: 18px;
+	font-weight: 700;
+    color: white;
+    padding: 20px;
+    top: 268px;    
+}

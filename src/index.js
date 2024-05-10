@@ -19,7 +19,7 @@ const GlobalStyle = createGlobalStyle`
       font-family: 'Montserrat', Helvetica, sans-serif;
     }
 
-    body {
+    body, p, h3 {
       margin: 0;
     }
     `

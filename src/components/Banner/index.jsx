@@ -7,8 +7,9 @@ function Banner({background}) {
 
     return (
       <div className='kasa-banner'>
-        <img src= {background==='shore'? shore: mountains} alt={background}>
+        <img src={background==='shore'?shore:mountains} alt={background} className={background==='shore'?'darken':''}>
         </img>
+        <p>{background==='shore'  ? 'Chez vous, partout et ailleurs' : ''}</p>
       </div>
     )
   }
