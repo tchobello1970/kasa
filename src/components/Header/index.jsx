@@ -4,11 +4,12 @@ import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 
 const StyledLink = styled(Link)`
-    padding: 15px;
+    display:inline-block;
+    padding: 15px 0px;
     font-size: 24px;
     font-weight: 500;
     text-decoration:none;
-    align: right;
+    text-align: right;
     color: black;
     width:136px;
 `

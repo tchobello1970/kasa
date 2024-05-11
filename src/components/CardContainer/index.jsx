@@ -11,7 +11,7 @@ function CardContainer() {
         {logements.map(({ id, cover, title }) =>
                    (
                     <div key={id}>
-                      <Card cover={cover} title={title} />
+                      <Card cover={cover} title={title} id={id}/>
                     </div>
                   )
                 )}

@@ -1,10 +1,13 @@
 import '../../styles/Card.css'
+import { Link } from 'react-router-dom';
 
-function Card({cover,title}) {
+function Card({cover,title,id}) {
 
     return (
       <div className='kasa-card'>
-        <img src={cover} alt={`${title} cover`} />
+        <Link to={`/gallery/${id}`}>
+            <img src={cover} alt={`${title} cover`} />
+            </Link>
         <h3>{title}</h3>
       </div>
     )
