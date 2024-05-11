@@ -1,0 +1,43 @@
+
+.kasa-collapse-title-container{
+    width: auto;
+    height: 54px;
+    border-radius: 5px;
+    padding: 10px 20px 10px 15px;
+    background-color:#FF6060;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.kasa-collapse-title{
+    color:white;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.kasa-collapse-arrow-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+}
+
+.kasa-collapse-content {
+    width: auto;
+    padding: 15px;
+
+    border-radius: 10px 10px 5px 5px;
+    /* F6 hex -> 246 rgb */
+    background-color:rgba(246, 246, 246, 0.45);
+    font-weight: 400;
+    font-size: 18px;
+    height: 0;
+    overflow: hidden;
+    transition: height 5s ease;
+}
+
+.kasa-collapse-content.open {
+    height: 52px;
+}

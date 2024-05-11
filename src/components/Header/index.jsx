@@ -1,26 +1,15 @@
 import '../../styles/Header.css'
 import logo from '../../assets/logo-header.png'
-import { Link } from 'react-router-dom'
-import styled from 'styled-components'
+import { NavLink } from 'react-router-dom'
 
-const StyledLink = styled(Link)`
-    display:inline-block;
-    padding: 15px 0px;
-    font-size: 24px;
-    font-weight: 500;
-    text-decoration:none;
-    text-align: right;
-    color: black;
-    width:136px;
-`
 
 function Header() {
   return (
     <div className='kasa-header'>
       <img src={logo} alt='logo-Kasa' className='logo-header' />
       <nav>
-        <StyledLink to="/">Accueil</StyledLink>
-        <StyledLink to="/about">A propos</StyledLink>
+        <NavLink to="/" activeClassName="active">Accueil</NavLink>
+        <NavLink to="/about" activeClassName="active">A propos</NavLink>
       </nav>
     </div>
   )

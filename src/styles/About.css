@@ -1,0 +1,10 @@
+.kasa-values-container {
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    margin: 0px 208px 40px 208px;
+    gap: 30px;
+}
