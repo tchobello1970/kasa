@@ -1,0 +1,31 @@
+.kasa-error {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.alert-404 {
+    color:#FF6060;
+    font-weight: 700;
+    font-size: 288px;
+    padding-top: 124px;
+}
+
+h2 {
+    color:#FF6060;
+    font-weight: 500;
+    font-size: 36px;
+    padding: 77px 0 116px 0;
+}
+
+.link {
+    color:black;
+    font-weight: 500;
+    font-size: 18px;
+    text-decoration: underline;
+    padding-bottom: 140px;
+}
+
+
+
