@@ -5,6 +5,7 @@ import { useParams } from 'react-router-dom';
 import { logements } from '../../data/logements';
 import Error from '../Error';
 import Carrousel from '../../components/Carrousel';
+import Collapse from '../../components/Collapse';
 import starGrey from '../../assets/star-grey.png'
 import starPink from '../../assets/star-pink.png'
 
@@ -29,11 +30,14 @@ function Flat () {
       }
     }
 
+    const equipements = appart.equipments.map((equipment, index) => (
+      <li key={index}>{equipment}</li>
+    ))
 
     return (
     <div>
       <div className='kasa-flat'>
-          < Carrousel />
+          < Carrousel pictures={appart.pictures}/>
           <div className='kasa-flat-coords'>
             <div className='kasa-flat-where'>
               <h2>{appart.title}</h2>
@@ -50,6 +54,14 @@ function Flat () {
             </div>
             <div className='kasa-flat-ratings'>{stars}</div>
 
+          </div>
+          <div className='kasa-desc'>
+            <div className='kasa-collapse-container'>
+                <Collapse title={'Description'} content={appart.description} />
+            </div>
+            <div className='kasa-collapse-container'>
+                <Collapse title={'Équipements'} content={equipements} />
+            </div>
           </div>
         </div>
      </div>
