@@ -8,10 +8,10 @@ function CardContainer() {
     return (
       <div className='kasa-card-container'>
 
-        {logements.map(({ id, cover, title }) =>
+        {logements.map(logement =>
                    (
-                    <div key={id}>
-                      <Card cover={cover} title={title} id={id}/>
+                    <div key={logement.id}>
+                      <Card logement={logement}/>
                     </div>
                   )
                 )}

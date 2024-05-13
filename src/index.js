@@ -8,7 +8,7 @@ import Header from './components/Header'
 import Home from './pages/Home'
 import About from './pages/About'
 import Error from './pages/Error'
-import Gallery from './pages/Gallery'
+import Flat from './pages/Flat'
 import Footer from './components/Footer'
 //import reportWebVitals from './reportWebVitals';
 
@@ -21,7 +21,7 @@ root.render(
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/gallery/:flatNumber" element={<Gallery />} />
+        <Route path="/flat/:flatNumber" element={<Flat />} />
         <Route path="*" element={<Error />} />
       </Routes>
       <Footer />
