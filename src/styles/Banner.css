@@ -10,9 +10,15 @@
     align-items: center;
 }
 
-.darken {
+.darken60 {
     /*background-color: rgba(0, 0, 0, 0.6);*/
     filter: brightness(40%);
+}
+
+
+.darken30 {
+    /*background-color: rgba(0, 0, 0, 0.3);*/
+    filter: brightness(70%);
 }
 
 .kasa-banner img {

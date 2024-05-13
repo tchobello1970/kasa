@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 
-//import './styles/index.css';
+import './styles/Index.css';
 
 import Header from './components/Header'
 import Home from './pages/Home'
@@ -12,25 +12,11 @@ import Gallery from './pages/Gallery'
 import Footer from './components/Footer'
 //import reportWebVitals from './reportWebVitals';
 
-import { createGlobalStyle } from 'styled-components'
-
-const GlobalStyle = createGlobalStyle`
-    * {
-      font-family: 'Montserrat', Helvetica, sans-serif;
-    }
-
-    body, p, h3 {
-      margin: 0;
-    }
-    `
-
-
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Router>
-      <GlobalStyle />
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />

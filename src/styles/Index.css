@@ -1,0 +1,9 @@
+* {
+    font-family: 'Montserrat', Helvetica, sans-serif;
+    box-sizing: border-box;
+  }
+
+  body, p, h3 {
+    margin: 0;
+    padding: 0;
+  }
