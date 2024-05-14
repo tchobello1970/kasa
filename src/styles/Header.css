@@ -3,21 +3,45 @@
 	justify-content: space-between;
 	flex-direction: row;
 	align-items: center;
-	height: 68px;
-    padding: 45px 100px 50px 100px;
+	height: 163px;
+    padding: 45px 0px 50px 0px;
+}
+
+.kasa-header img{
+    width: auto;
+    height: 68px;
 }
 
 nav a{
 	display:inline-block;
-    padding: 15px 0px;
     font-size: 24px;
     font-weight: 500;
-    text-decoration:none;
+    text-decoration: none;
     text-align: right;
     color: black;
-    width:136px;
+    width: 136px;
 }
 
-.active {
+/* thanks to NavLink link is underlined when page is active */
+nav a.active {
 	text-decoration: underline;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767.98px) {
+    .kasa-header {
+        height: 94px;
+        padding: 20px 0px 27px 0px;
+    }
+
+    .kasa-header img{
+        width: 145px;
+        height: auto;
+    }
+
+    nav a{
+        font-size: 12px;
+        font-weight: 500;
+        text-transform: uppercase;
+        width: 95px;
+    }
 }
