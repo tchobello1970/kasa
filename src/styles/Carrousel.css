@@ -1,6 +1,66 @@
 .kasa-carrousel {
+    position: relative;
     width: 100%;
     height: 415px;
-    background-color: lime;
+    
     border-radius: 25px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.kasa-carrousel img{
+    width: 100%;
+    height: 415px;
+    border-radius: 25px;
+    object-fit: cover;
+}
+
+.kasa-carrousel-dynamics{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 367px;
+}
+
+.kasa-carrousel-dynamics span{
+    font-size: 18px;
+	font-weight: 500;
+    color: white;
+    align-self:flex-end;
+}
+
+.kasa-carrousel-arrow-left-container{
+    display: absolute;
+    top: 149px;
+    left:0px;
+    width: 96px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self:center;
+}
+
+.kasa-carrousel-arrow-left-container img{
+    height: 80px;
+    width: auto;
+}
+
+.kasa-carrousel-arrow-right-container{
+    display: absolute;
+    top: 149px;
+    right:0px;
+    width: 96px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
+
+.kasa-carrousel-arrow-right-container img{
+    height: 80px;
+    width: auto;
 }
