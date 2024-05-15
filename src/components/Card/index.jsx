@@ -7,7 +7,7 @@ function Card({logement}) {
       <div className='kasa-card'>
         <Link to={`/flat/${logement.id}`}>
             <img src={logement.cover} alt={`${logement.title} cover`} />
-            </Link>
+        </Link>
         <h3>{logement.title}</h3>
       </div>
     )
