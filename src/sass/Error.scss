@@ -1,0 +1,45 @@
+.kasa-error {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    span {
+        color: #FF6060;
+        font-weight: 700;
+        font-size: 288px;
+        padding-top: 41px;
+
+        @media screen and (min-width: 320px) and (max-width: 767.98px) {
+            font-size: 96px;
+            padding-top: 77px;
+        }
+    }
+
+    h2 {
+        color: #FF6060;
+        font-weight: 500;
+        font-size: 36px;
+        padding: 97px 0 146px 0;
+        text-align: center;
+
+        @media screen and (min-width: 320px) and (max-width: 767.98px) {
+            font-size: 18px;
+            line-height: 26px;
+            padding: 105px 37.5px 113px 37.5px;
+        }
+    }
+
+    .link {
+        color: black;
+        font-weight: 500;
+        font-size: 18px;
+        text-decoration: underline;
+        padding-bottom: 140px;
+
+        @media screen and (min-width: 320px) and (max-width: 767.98px) {
+            font-size: 14px;
+            padding-bottom: 114px;
+        }
+    }
+}

@@ -1,13 +1,12 @@
 import '../../styles/Header.css';
 import logo from '../../assets/logo-header.png';
 import { NavLink } from 'react-router-dom';
-
-
+/* thanks to NavLink link is underlined when page is active */
 
 function Header() {
   return (
       <div className='kasa-header'>
-        <img src={logo} alt='logo-Kasa' className='logo-header' />
+        <img src={logo} alt='logo-Kasa' />
         <nav>
           <NavLink to="/" >Accueil</NavLink>
           <NavLink to="/about" >A propos</NavLink>
@@ -17,4 +16,3 @@ function Header() {
 }
 
 export default Header
-

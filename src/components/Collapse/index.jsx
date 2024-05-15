@@ -13,13 +13,12 @@ function Collapse({ title, content }) {
     return (
         <div>
             <div className='kasa-collapse-title-container' onClick={toggleContent}>
-                <div className='kasa-collapse-title'>{title}</div>
-                <div className={`kasa-collapse-arrow-container ${isContentOpen ? 'open':'close'}`}
-                        >
+                <span>{title}</span>
+                <div className={`kasa-collapse-arrow-container ${isContentOpen ? 'open':'close'}`}  >
                     <img src={vector} alt="fleche" />
                 </div>
             </div>
-            {isContentOpen && <div id={`${title}-id`} className='kasa-collapse-content'>{content}</div>}
+            {isContentOpen && <div className='kasa-collapse-content'>{content}</div>}
         </div>
     );
 }

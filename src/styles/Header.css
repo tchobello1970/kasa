@@ -4,7 +4,7 @@
 	flex-direction: row;
 	align-items: center;
 	height: 163px;
-    padding: 45px 0px 50px 0px;
+    padding: 45px 0 50px 0;
 }
 
 .kasa-header img{
@@ -30,7 +30,7 @@ nav a.active {
 @media screen and (min-width: 320px) and (max-width: 767.98px) {
     .kasa-header {
         height: 94px;
-        padding: 20px 0px 27px 0px;
+        padding: 20px 0 27px 0;
     }
 
     .kasa-header img{

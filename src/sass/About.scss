@@ -5,10 +5,8 @@
     justify-content: center;
     margin: 0 108px 40px 108px;
     gap: 30px;
-}
 
-@media screen and (min-width: 320px) and (max-width: 767.98px) {
-    .kasa-values-container {
+    @media screen and (min-width: 320px) and (max-width: 767.98px) {
         margin: 0 0 20px 0;
         gap: 20px;
     }

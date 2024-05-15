@@ -5,18 +5,19 @@
     align-items: center;
 }
 
-.kasa-error .alert-404 {
+.kasa-error span {
     color:#FF6060;
     font-weight: 700;
     font-size: 288px;
-    padding-top: 124px;
+    padding-top: 41px;
 }
 
 .kasa-error h2 {
     color:#FF6060;
     font-weight: 500;
     font-size: 36px;
-    padding: 77px 0 116px 0;
+    padding: 97px 0 146px 0;
+    text-align: center;
 }
 
 .kasa-error .link {
@@ -27,5 +28,20 @@
     padding-bottom: 140px;
 }
 
-
-
+@media screen and (min-width: 320px) and (max-width: 767.98px) {
+    .kasa-error span {
+        font-size: 96px;
+        padding-top: 77px;
+    }
+    
+    .kasa-error h2 {
+        font-size: 18px;
+        line-height: 26px;
+        padding: 105px 37.5px 113px 37.5px;
+    }
+    
+    .kasa-error .link {
+        font-size: 14px;
+        padding-bottom: 114px;
+    }
+}

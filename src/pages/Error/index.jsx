@@ -5,7 +5,7 @@ function Error() {
 
     return (
       <div className='kasa-error'>
-        <div className='alert-404'>404</div>
+        <span >404</span>
         <h2>Oups ! La page que vous demandez n'existe pas.</h2>
         <Link to="/" className="link">Retourner sur la page d'accueil</Link>
         
