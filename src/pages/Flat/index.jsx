@@ -38,22 +38,21 @@ function Flat () {
     <div>
       <div className='kasa-flat'>
           < Carrousel pictures={appart.pictures}/>
-          <div className='kasa-flat-coords'>
-            <div className='kasa-flat-where'>
+          <div className='kasa-flat-infos'>
+            <div className='kasa-flat-where-tags'>
               <h2>{appart.title}</h2>
               <p>{appart.location}</p>
+              <div className='kasa-flat-tags'>
+                {appart.tags.map(tag => ( <div key={tag} className='tag'>{tag}</div>))}
+              </div>
             </div>
-            <div className='kasa-flat-who'>
-              <h3>{appart.host.name}</h3>
-              <img src={appart.host.picture} alt="owner"/>
+            <div className='kasa-who-ratings'>
+              <div className='kasa-who'>
+                <h3>{appart.host.name}</h3>
+                <img src={appart.host.picture} alt="owner"/>
+              </div>
+              <div className='kasa-ratings'>{stars}</div>
             </div>
-          </div>
-          <div className='kasa-flat-tags-ratings'>
-            <div className='kasa-flat-tags'>
-              {appart.tags.map(tag => ( <div key={tag} className='tag'>{tag}</div>))}
-            </div>
-            <div className='kasa-flat-ratings'>{stars}</div>
-
           </div>
           <div className='kasa-desc'>
             <div className='kasa-collapse-container'>

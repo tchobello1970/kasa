@@ -1,0 +1,154 @@
+.kasa-flat {
+    margin-bottom: 50px;
+
+    &-infos {
+        display: flex;
+        justify-content: space-between;
+        margin: 24px 0 14px;
+    }
+
+    &-where-tags {
+        h2 {
+            font-size: 36px;
+            font-weight: 500;
+            color: #FF6060;
+            margin: 8px 0 6px;
+        }
+
+        p {
+            font-size: 18px;
+            font-weight: 500;
+            color: black;
+        }
+    }
+
+    &-tags {
+        display: flex;
+        align-items: center;
+        margin-top: 22px;
+    }
+}
+
+.tag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 115px;
+    height: 25px;
+    border-radius: 10px;
+    background-color: #FF6060;
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 0 5px;
+    margin-right: 5px;
+}
+
+.kasa-who-ratings {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 14px;
+
+    .kasa-who {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        h3 {
+            font-size: 18px;
+            font-weight: 500;
+            color: #FF6060;
+            padding-right: 5px;
+            width: 100px;
+            text-align: right;
+        }
+
+        img {
+            width: 64px;
+            height: 64px;
+            border-radius: 40px;
+            object-fit: cover;
+        }
+    }
+
+    .kasa-ratings {
+        display: flex;
+        align-items: center;
+
+        img {
+            padding: 6px;
+        }
+    }
+}
+
+.kasa-desc {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    .kasa-collapse-container {
+        width: 47%;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767.98px) {
+    .kasa-flat {
+        margin-bottom: 25px;
+
+        &-infos {
+            flex-direction: column;
+        }
+
+        &-where-tags {
+            h2 {
+                font-size: 18px;
+                margin: 8px 0 6px;
+            }
+
+            p {
+                font-size: 14px;
+            }
+        }
+
+        &-tags {
+            margin-top: 22px;
+        }
+    }
+
+    .tag {
+        min-width: 84px;
+        height: 18px;
+        font-size: 10px;
+    }
+
+    .kasa-who-ratings {
+        flex-direction: row-reverse;
+
+        .kasa-who {
+            h3 {
+                font-size: 12px;
+            }
+
+            img {
+                width: 32px;
+                height: 32px;
+            }
+        }
+    }
+
+    .kasa-ratings img {
+        padding: 3px;
+        width: 18px;
+        height: 18px;
+    }
+
+    .kasa-desc {
+        flex-direction: column;
+        gap: 20px;
+
+        .kasa-collapse-container {
+            width: 100%;
+        }
+    }
+}

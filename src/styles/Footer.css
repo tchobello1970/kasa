@@ -4,10 +4,12 @@
     align-items: center;
     background-color: black;
     height: 209px;
+    padding-top: 66px;
 }
 
 .kasa-footer img {
-    padding: 66px 0 44px 0;
+    width: 122px;
+    height: 39px;
 }
 
 .kasa-footer div {
@@ -15,14 +17,12 @@
     font-weight: 500;
     color: white;
     text-align: center;
+    margin-top: 44px;
 }
 
 @media screen and (min-width: 320px) and (max-width: 767.98px) {
-    .kasa-footer img {
-        padding-bottom: 13px;
-    }
-
     .kasa-footer div {
+        margin-top: 13px;
         font-size: 12px;
         width: 134px;
     }

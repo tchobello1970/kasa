@@ -1,98 +1,82 @@
 .kasa-flat {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 70px 100px 50px 100px;
+    margin-bottom: 50px;
 }
 
-
-.kasa-flat-coords{
+.kasa-flat-infos {
     display: flex;
-    justify-content: center;
-    align-items: center;
     justify-content: space-between;
-    width: 100%;
+    margin: 24px 0 14px;
 }
 
-.kasa-flat-where{
+.kasa-flat-where-tags h2 {
+    font-size: 36px;
+    font-weight: 500;
+    color: #FF6060;
+    margin: 8px 0 6px;
+}
+
+.kasa-flat-where-tags p {
+    font-size: 18px;
+    font-weight: 500;
+    color: black;
+}
+
+.kasa-flat-tags {
     display: flex;
-    justify-content: center;
-    flex-direction: column;
-    padding-top: 20px;
+    align-items: center;
+    margin-top: 22px;
 }
 
-.kasa-flat-who{
+.tag {
     display: flex;
     justify-content: center;
     align-items: center;
+    min-width: 115px;
+    height: 25px;
+    border-radius: 10px;
+    background-color: #FF6060;
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 0 5px;
+    margin-right: 5px;
 }
 
-.kasa-flat-who img{
+.kasa-who-ratings {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 14px;
+}
+
+.kasa-who {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.kasa-who h3 {
+    font-size: 18px;
+    font-weight: 500;
+    color: #FF6060;
+    padding-right: 5px;
+    width: 100px;
+    text-align: right;
+}
+
+.kasa-who img {
     width: 64px;
     height: 64px;
     border-radius: 40px;
     object-fit: cover;
 }
 
-.kasa-flat h2 {
-    font-size: 36px;
-	font-weight: 500;
-    color:#FF6060;
-}
-
-.kasa-flat p{
-    font-size: 18px;
-	font-weight: 500;
-    color:black; 
-}
-
-.kasa-flat-who h3{
-    font-size: 18px;
-	font-weight: 500;
-    color:#FF6060;
-    padding-right: 5px;
-    width: 100px;
-    text-align: right;
-}
-
-.kasa-flat-tags-ratings {
+.kasa-ratings {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    padding: 30px 0;
 }
 
-
-.kasa-flat-tags {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.tag{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-width: 115px;
-     height: 25px;
-    border-radius: 10px;
-    background-color:#FF6060;
-    color:white;
-    font-size: 14px;
-	font-weight: 700;
-    padding: 0 5px;
-    margin-right: 5px;
-}
-
-.kasa-flat-ratings {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.kasa-flat-ratings img {
+.kasa-ratings img {
     padding: 6px;
 }
 
@@ -102,8 +86,64 @@
     width: 100%;
 }
 
-.kasa-collapse-container{
+.kasa-collapse-container {
     width: 47%;
 }
 
+@media screen and (min-width: 320px) and (max-width: 767.98px) {
+    .kasa-flat {
+        margin-bottom: 25px;
+    }
 
+    .kasa-flat-infos {
+        flex-direction: column;
+    }
+
+    .kasa-flat-where-tags h2 {
+        font-size: 18px;
+        margin: 8px 0 6px;
+    }
+
+    .kasa-flat-where-tags p {
+        font-size: 14px;
+    }
+
+    .kasa-flat-tags {
+        margin-top: 22px;
+    }
+
+    .tag {
+        min-width: 84px;
+        height: 18px;
+        font-size: 10px;
+    }
+
+    .kasa-who-ratings {
+        flex-direction: row-reverse;
+    }
+
+    .kasa-who h3 {
+        font-size: 12px;
+    }
+
+    .kasa-who img {
+        width: 32px;
+        height: 32px;
+    }
+
+    .kasa-ratings img {
+        padding: 3px;
+        width: 18px;
+        height: 18px;
+    }
+
+    .kasa-desc {
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .kasa-collapse-container {
+        width: 100%;
+    }
+}
