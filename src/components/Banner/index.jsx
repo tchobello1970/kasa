@@ -1,4 +1,5 @@
-import '../../styles/Banner.css';
+//import '../../styles/Banner.css';
+import '../../sass/Banner.scss';
 import shore from '../../assets/shore.webp';
 import mountains from '../../assets/mountains.webp';
 

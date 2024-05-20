@@ -29,11 +29,24 @@
 }
 
 .kasa-collapse-content {
-    padding: 15px;
+    padding: 0 15px;
     border-radius: 10px 10px 5px 5px;
     background-color: rgba(246, 246, 246, 0.45);
     font-weight: 400;
     font-size: 18px;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, opacity 0.3s ease, padding 0.3s ease;
+
+    &.open {
+        padding: 15px;
+        max-height: 1000px;
+        visibility: visible;
+        height: auto;
+        opacity: 1;
+        overflow: visible;
+    }
 
     li {
         list-style-type: none;

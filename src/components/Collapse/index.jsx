@@ -1,5 +1,6 @@
 import { useState } from 'react'
-import '../../styles/Collapse.css'
+//import '../../styles/Collapse.css'
+import '../../sass/Collapse.scss';
 import vector from '../../assets/vector.png'
 
 
@@ -14,11 +15,11 @@ function Collapse({ title, content }) {
         <div>
             <div className='kasa-collapse-title-container' onClick={toggleContent}>
                 <span>{title}</span>
-                <div className={`kasa-collapse-arrow-container ${isContentOpen ? 'open':'close'}`}  >
+                <div className={`kasa-collapse-arrow-container ${isContentOpen ? 'open' : ''}`} >
                     <img src={vector} alt="fleche" />
                 </div>
             </div>
-            {isContentOpen && <div className='kasa-collapse-content'>{content}</div>}
+            <div className={`kasa-collapse-content ${isContentOpen ? 'open' : ''}`}>{content}</div>
         </div>
     );
 }

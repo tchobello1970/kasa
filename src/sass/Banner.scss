@@ -37,13 +37,6 @@
              1px  1px 0 #000,
              0px 4px 4px rgba(0, 0, 0, 0.25);
              /* Ombre de texte pour simuler la bordure */
-
-        @media screen and (min-width: 320px) and (max-width: 767.98px) {
-            font-size: 24px;
-            text-shadow: none;
-            text-align: left;
-            padding: 0 16px;
-        }
     }
 
     @media screen and (min-width: 320px) and (max-width: 767.98px) {
@@ -53,6 +46,13 @@
 
         img {
             border-radius: 10px;
+        }
+
+        p {
+            font-size: 24px;
+            text-shadow: none;
+            text-align: left;
+            padding: 0 16px;
         }
     }
 }

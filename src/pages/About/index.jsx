@@ -1,5 +1,6 @@
 
-import '../../styles/About.css'
+//import '../../styles/About.css'
+import '../../sass/About.scss';
 import Banner from '../../components/Banner'
 import Collapse from '../../components/Collapse'
 import { values } from '../../data/valeurs'

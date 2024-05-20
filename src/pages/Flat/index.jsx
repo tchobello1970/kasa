@@ -1,6 +1,7 @@
 
 
-import '../../styles/Flat.css'
+//import '../../styles/Flat.css'
+import '../../sass/Flat.scss';
 import { useParams } from 'react-router-dom';
 import { logements } from '../../data/logements';
 import Error from '../Error';

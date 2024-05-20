@@ -1,23 +1,41 @@
 .kasa-carrousel {
     position: relative;
+    overflow: hidden;
     width: 100%;
-    height: 415px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 100%;
+    border-radius: 25px;
 
-    img {
+    &-inner {
+        display: flex;
         width: 100%;
-        height: 100%;
-        border-radius: 25px;
-        object-fit: cover;
+        height: 415px;
+
+        &.transition {
+            transition: transform 0.5s ease-in-out;
+        }
+
+        > div {
+            min-width: 100%;
+            height: 100%;
+            border-radius: 25px;
+
+            img {
+                width: 100%;
+                height: 100%;
+                
+                object-fit: cover;
+            }
+        }
     }
 
-    .kasa-carrousel-dynamics {
+    &-dynamics {
         position: absolute;
+        top: 50%;
+        width: 100%;
         display: flex;
         justify-content: space-between;
-        width: 100%;
+        align-items: center;
+        transform: translateY(-50%);
         height: 367px;
 
         span {
@@ -26,47 +44,46 @@
             color: white;
             align-self: flex-end;
         }
-    }
 
-    .kasa-carrousel-arrow-left-container,
-    .kasa-carrousel-arrow-right-container {
-        width: 96px;
-        height: 120px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        align-self: center;
+        &-arrow-left-container,
+        &-arrow-right-container {
+            cursor: pointer;
+            width: 96px;
+            height: 120px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-self: center;
 
-        img {
-            height: 80px;
-            width: auto;
+            img {
+                height: 80px;
+                width: auto;
+            }
         }
     }
-}
 
-@media screen and (min-width: 320px) and (max-width: 767.98px) {
-    .kasa-carrousel {
+    @media screen and (min-width: 320px) and (max-width: 767.98px) {
         height: 255px;
 
-        img {
+        &-image {
             border-radius: 10px;
         }
 
-        .kasa-carrousel-dynamics {
+        &-dynamics {
             height: 100%;
 
             span {
                 display: none;
             }
-        }
 
-        .kasa-carrousel-arrow-left-container,
-        .kasa-carrousel-arrow-right-container {
-            width: 28px;
-            height: 32px;
-
-            img {
+            &-arrow-left-container,
+            &-arrow-right-container {
+                width: 28px;
                 height: 32px;
+
+                img {
+                    height: 32px;
+                }
             }
         }
     }
