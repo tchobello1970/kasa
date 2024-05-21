@@ -1,0 +1,14 @@
+$margin-side: 100px;
+$margin-side-mobile: 20px;
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 1440px;
+  margin: 0 $margin-side;
+
+  @media screen and (min-width: 320px) and (max-width: 767.98px) {
+    margin: 0 $margin-side-mobile;
+  }
+}

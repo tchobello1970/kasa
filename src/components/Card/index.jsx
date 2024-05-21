@@ -1,16 +1,20 @@
-//import '../../styles/Card.css'
 import '../../sass/Card.scss';
 import { Link } from 'react-router-dom';
 
-function Card({logement}) {
+/**
+ * Component for rendering a card representing a property.
+ * Displays the property's image and title, with a link to view details.
+ *
+ * @param {Object} logement - The property object containing id, title, and cover image.
+ * @returns {JSX.Element} The card component.
+ */
 
+function Card({logement}) {
     return (
-      <div className='kasa-card'>
-        <Link to={`/flat/${logement.id}`}>
-            <img src={logement.cover} alt={`${logement.title} cover`} />
-        </Link>
+      <Link to={`/flat/${logement.id}`} className="kasa-card">
+        <img src={logement.cover} alt={`${logement.title} cover`} />
         <h3>{logement.title}</h3>
-      </div>
+    </Link>
     )
   }
   

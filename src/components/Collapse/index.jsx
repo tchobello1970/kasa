@@ -1,8 +1,15 @@
-import { useState } from 'react'
-//import '../../styles/Collapse.css'
 import '../../sass/Collapse.scss';
-import vector from '../../assets/vector.png'
+import vector from '../../assets/vector.png';
+import { useState } from 'react';
 
+/**
+ * Collapse component that renders a collapsible section with a title and content.
+ *
+ * @param {Object} props - The props object.
+ * @param {string} props.title - The title of the collapsible section.
+ * @param {string} props.content - The content of the collapsible section.
+ * @returns {JSX.Element} The rendered Collapse component.
+ */
 
 function Collapse({ title, content }) {
     const [isContentOpen, setIsContentOpen] = useState(false);
@@ -13,13 +20,13 @@ function Collapse({ title, content }) {
 
     return (
         <div>
-            <div className='kasa-collapse-title-container' onClick={toggleContent}>
+            <div className='title__container' onClick={toggleContent}>
                 <span>{title}</span>
-                <div className={`kasa-collapse-arrow-container ${isContentOpen ? 'open' : ''}`} >
+                <div className={`arrow__container ${isContentOpen ? 'open' : ''}`} >
                     <img src={vector} alt="fleche" />
                 </div>
             </div>
-            <div className={`kasa-collapse-content ${isContentOpen ? 'open' : ''}`}>{content}</div>
+            <div className={`content ${isContentOpen ? 'open' : ''}`}>{content}</div>
         </div>
     );
 }

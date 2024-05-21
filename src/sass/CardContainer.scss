@@ -1,5 +1,9 @@
 .kasa-card-container {
     display: grid;
+    /* 
+       Define grid columns that will automatically adjust based on the available space.
+       Each column will have a minimum width of 340px and will expand to fill any remaining space equally.
+*/
     grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
     gap: 50px 60px;
     justify-items: center;
@@ -7,6 +11,12 @@
     padding: 50px;
     border-radius: 25px;
     background-color: #F6F6F6;
+
+    @media screen and (min-width: 768px) and (max-width: 1056px) {
+        gap: 25px 30px;
+        padding: 25px;
+        border-radius: 10px;
+    }
 
     @media screen and (min-width: 320px) and (max-width: 767.98px) {
         grid-template-columns: 1fr;

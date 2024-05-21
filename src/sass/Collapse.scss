@@ -1,4 +1,8 @@
-.kasa-collapse-title-container {
+$container-color: #FF6060;
+$title-color: white;
+
+
+.title__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -6,20 +10,20 @@
     height: 52px;
     border-radius: 5px;
     padding: 10px 20px 10px 15px;
-    background-color: #FF6060;
+    background-color: $container-color;
 
     span {
-        color: white;
+        color: $title-color;
         font-weight: 700;
         font-size: 24px;
     }
 }
 
-.kasa-collapse-arrow-container {
+.arrow__container {
     width: 32px;
     height: 32px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     transition: transform 0.3s ease;
 
@@ -28,7 +32,7 @@
     }
 }
 
-.kasa-collapse-content {
+.content {
     padding: 0 15px;
     border-radius: 10px 10px 5px 5px;
     background-color: rgba(246, 246, 246, 0.45);
@@ -53,8 +57,14 @@
     }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1056px) {
+    .content {
+        font-size: 15px;
+    }
+}
+
 @media screen and (min-width: 320px) and (max-width: 767.98px) {
-    .kasa-collapse-title-container {
+    .title__container {
         height: 30px;
         padding: 10px;
 
@@ -63,7 +73,7 @@
         }
     }
 
-    .kasa-collapse-arrow-container {
+    .arrow__container {
         width: 16px;
         height: 16px;
 
@@ -73,7 +83,7 @@
         }
     }
 
-    .kasa-collapse-content {
+    .content {
         font-size: 12px;
         line-height: 17px;
     }
