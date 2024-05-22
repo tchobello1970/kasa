@@ -37,9 +37,9 @@ const Carrousel = ({ pictures }) => {
     const displayedIndex = activeIndex === 0 ? pictures.length : activeIndex === pictures.length + 1 ? 1 : activeIndex;
 
     return (
-        <div className="kasa-carrousel">
+        <div className="carrousel">
             <div
-                className={`kasa-carrousel-inner ${transitionEnabled ? 'transition' : ''}`}
+                className={`carrousel__inner ${transitionEnabled ? 'transition' : ''}`}
                 style={{ transform: `translateX(-${activeIndex * 100}%)` }}
                 ref={carrouselInnerRef}
                 onTransitionEnd={() => {
@@ -50,18 +50,18 @@ const Carrousel = ({ pictures }) => {
                 }}
             >
                 {picturesExtended.map((picture, index) => (
-                    <div key={index} className="kasa-carrousel-item">
+                    <div key={index} className="carrousel__item">
                         <img src={picture} alt={`Appartement ${index + 1}`} />
                     </div>
                 ))}
             </div>
             {pictures.length > 1 && (
-                <div className="kasa-carrousel-dynamics">
-                    <div className="kasa-carrousel-arrow-left-container" onClick={handlePrev}>
+                <div className="carrousel__elements">
+                    <div className="carrousel__arrow--container left" onClick={handlePrev}>
                         <img src={arrow_left} alt="Flèche gauche" />
                     </div>
-                    <span className='kasa-carrousel-count'>{displayedIndex}/{pictures.length}</span>
-                    <div className="kasa-carrousel-arrow-right-container" onClick={handleNext}>
+                    <span className='carrousel-count'>{displayedIndex}/{pictures.length}</span>
+                    <div className="carrousel__arrow--container right" onClick={handleNext}>
                         <img src={arrow_right} alt="Flèche droite" />
                     </div>
                 </div>
