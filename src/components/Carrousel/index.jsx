@@ -56,12 +56,12 @@ const Carrousel = ({ pictures }) => {
                 ))}
             </div>
             {pictures.length > 1 && (
-                <div className="carrousel__elements">
-                    <div className="carrousel__arrow--container left" onClick={handlePrev}>
+                <div className="carrousel__controls">
+                    <div className="carrousel__arrow carrousel__arrow --left" onClick={handlePrev}>
                         <img src={arrow_left} alt="Flèche gauche" />
                     </div>
-                    <span className='carrousel-count'>{displayedIndex}/{pictures.length}</span>
-                    <div className="carrousel__arrow--container right" onClick={handleNext}>
+                    <span className='carrousel__counter'>{displayedIndex}/{pictures.length}</span>
+                    <div className="carrousel__arrow carrousel__arrow --right" onClick={handleNext}>
                         <img src={arrow_right} alt="Flèche droite" />
                     </div>
                 </div>
