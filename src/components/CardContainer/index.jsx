@@ -1,7 +1,6 @@
 
 import '../../sass/CardContainer.scss';
 import Card from '../../components/Card';
-import { logements } from '../../data/logements';
 
 /**
  * Component for rendering a container of cards displaying logements.
@@ -11,11 +10,11 @@ import { logements } from '../../data/logements';
  * @returns {JSX.Element} The CardContainer component.
  */
 
-function CardContainer() {
+function CardContainer({cards}) {
   return (
-      <div className='kasa-card-container'>
-          {logements.map(logement => (
-              <Card key={logement.id} logement={logement}/>
+      <div className='card-container'>
+          {cards.map(card => (
+              <Card key={card.id} logement={card}/>
           ))}
       </div>
   );

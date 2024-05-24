@@ -1,17 +1,21 @@
 import '../../sass/Carrousel.scss';
 import arrow_left from '../../assets/arrow_left.png';
 import arrow_right from '../../assets/arrow_right.png';
-import { useState, useRef, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 
 const Carrousel = ({ pictures }) => {
-    const [activeIndex, setActiveIndex] = useState(1);
-    const [transitionEnabled, setTransitionEnabled] = useState(true);
-    const carrouselInnerRef = useRef(null);
-
+    
     const picturesExtended = [pictures[pictures.length - 1], ...pictures, pictures[0]];
-
+    
+    const [activeIndex, setActiveIndex] = useState(1);
     const handlePrev = () => setActiveIndex(prevIndex => prevIndex - 1);
     const handleNext = () => setActiveIndex(prevIndex => prevIndex + 1);
+
+    const [transitionEnabled, setTransitionEnabled] = useState(true);
+
+    
+
+
 
     useEffect(() => {
         const lastIndex = pictures.length;
@@ -41,7 +45,6 @@ const Carrousel = ({ pictures }) => {
             <div
                 className={`carrousel__inner ${transitionEnabled ? 'transition' : ''}`}
                 style={{ transform: `translateX(-${activeIndex * 100}%)` }}
-                ref={carrouselInnerRef}
                 onTransitionEnd={() => {
                     if (activeIndex === 0 || activeIndex === pictures.length + 1) {
                         setTransitionEnabled(false);

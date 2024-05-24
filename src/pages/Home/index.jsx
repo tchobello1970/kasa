@@ -1,6 +1,7 @@
 
 import Banner from '../../components/Banner';
 import CardContainer from '../../components/CardContainer';
+import { logements } from '../../data/logements';
 
 /**
  * Home component renders the home page of the application.
@@ -12,8 +13,8 @@ import CardContainer from '../../components/CardContainer';
 function Home() {
     return (
       <div>
-        <Banner background={'shore'}></Banner>
-        <CardContainer> </CardContainer>
+        <Banner background={'shore'} />
+        <CardContainer cards={logements}/>
       </div>
     )
 }

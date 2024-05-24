@@ -1,5 +1,4 @@
 import '../../sass/Layout.scss';
-import React from 'react';
 
 /**
  * Component for a basic layout wrapper.

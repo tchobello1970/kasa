@@ -39,7 +39,6 @@ $title-color: white;
     font-size: 18px;
     max-height: 0;
     opacity: 0;
-    overflow: hidden;
     transition: max-height 0.3s ease, opacity 0.3s ease, padding 0.3s ease;
 
     &.open {
@@ -48,8 +47,7 @@ $title-color: white;
         visibility: visible;
         height: auto;
         opacity: 1;
-        overflow: visible;
-    }
+     }
 
     li {
         list-style-type: none;

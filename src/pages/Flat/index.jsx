@@ -20,7 +20,6 @@ function Flat () {
   else  {
     const appart = apparts[0];
 
-
     const equipements = appart.equipments.map((equipment, index) => (
       <li key={index}>{equipment}</li>
     ))
