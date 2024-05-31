@@ -1,11 +1,12 @@
 $padding-side: 100px;
 $padding-side-mobile: 20px;
+$footer-height: 209px;
 
 .layout {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   max-width: 1440px;
+  min-height: calc(100vh - $footer-height);
   margin: 0 auto;
   padding: 0 $padding-side;
 
