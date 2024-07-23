@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/tchobello1970/kasa/static/css/main.97725e83.css",
+    "main.js": "/tchobello1970/kasa/static/js/main.ba7ec096.js",
+    "static/media/mountains.webp": "/tchobello1970/kasa/static/media/mountains.22168a1e068426dd5f0a.webp",
+    "static/media/shore.webp": "/tchobello1970/kasa/static/media/shore.a30e865704c049eec696.webp",
+    "index.html": "/tchobello1970/kasa/index.html",
+    "main.97725e83.css.map": "/tchobello1970/kasa/static/css/main.97725e83.css.map",
+    "main.ba7ec096.js.map": "/tchobello1970/kasa/static/js/main.ba7ec096.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.97725e83.css",
+    "static/js/main.ba7ec096.js"
+  ]
+}
