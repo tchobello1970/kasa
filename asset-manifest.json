@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/tchobello1970/kasa/static/css/main.97725e83.css",
-    "main.js": "/tchobello1970/kasa/static/js/main.b8dedfa1.js",
-    "static/media/mountains.webp": "/tchobello1970/kasa/static/media/mountains.22168a1e068426dd5f0a.webp",
-    "static/media/shore.webp": "/tchobello1970/kasa/static/media/shore.a30e865704c049eec696.webp",
-    "index.html": "/tchobello1970/kasa/index.html",
-    "main.97725e83.css.map": "/tchobello1970/kasa/static/css/main.97725e83.css.map",
-    "main.b8dedfa1.js.map": "/tchobello1970/kasa/static/js/main.b8dedfa1.js.map"
+    "main.css": "/kasa/static/css/main.97725e83.css",
+    "main.js": "/kasa/static/js/main.2a473a17.js",
+    "static/media/mountains.webp": "/kasa/static/media/mountains.22168a1e068426dd5f0a.webp",
+    "static/media/shore.webp": "/kasa/static/media/shore.a30e865704c049eec696.webp",
+    "index.html": "/kasa/index.html",
+    "main.97725e83.css.map": "/kasa/static/css/main.97725e83.css.map",
+    "main.2a473a17.js.map": "/kasa/static/js/main.2a473a17.js.map"
   },
   "entrypoints": [
     "static/css/main.97725e83.css",
-    "static/js/main.b8dedfa1.js"
+    "static/js/main.2a473a17.js"
   ]
 }
