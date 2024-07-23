@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+/*import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';*/
+import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 
 import './sass/Index.scss';
 import Layout from './components/Layout';
@@ -18,12 +19,12 @@ root.render(
     <Router>
       <Layout>
         <Header />
-        <Routes>
+        <Switch>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/flat/:flatNumber" element={<Flat />} />
           <Route path="*" element={<Error />} />
-        </Routes>
+        </Switch>
       </Layout>
       <Footer />
     </Router>
